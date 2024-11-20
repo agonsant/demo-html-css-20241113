@@ -1,0 +1,89 @@
+/** RESETS **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+/** FIN RESETS **/
+
+body {
+  background-color: #eee;
+  padding: 0.5rem;
+}
+
+.card__container {
+  max-width: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.card__img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card__properties-list {
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.card__taxes-container {
+  padding: 0.5rem;
+  background: #eee;
+  margin-top: 10px;
+}
+
+.card__title-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+
+.card__taxes-list {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
+
+.card__header-container {
+  position: relative;
+}
+
+.card__chip {
+  max-width: 100px;
+  width: 100%;
+  padding: 5px 7px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  margin: 1rem;
+  text-align: center;
+}
+
+.card__chip > span {
+  width: 10px;
+  border-radius: 100%;
+  background-color: green;
+  height: 10px;
+  display: inline-block;
+}
+
+.card__chip--active > span {
+  background-color: green;
+}
+
+.card__chip--inactive > span {
+  background-color: red;
+}
+
+.card__chip--disabled > span {
+  background-color: #eeeeee66;
+}
